@@ -1,0 +1,267 @@
+header {
+    background-color: #603f83; /* 深紫色背景 */
+    color: white;
+    padding: 10px 0;
+}
+
+.header-content {
+    width: 80%;
+    max-width: 1200px; /* 根据需要调整宽度 */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 使内容分布均匀 */
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;  /* 添加适当的间隔 */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px 0;
+    background-color: #603f83;
+    color: white;
+}
+section {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0; /* 调整上下的内边距 */
+}
+
+.about-content {
+    display: flex;
+    align-items: center; /* 保持垂直居中 */
+    justify-content: flex-start; /* 从左侧开始排列 */
+    text-align: left;
+}
+
+.about-text {
+    flex: 2; /* 使文本占用除图片外的所有可用空间 */
+    margin-right: 10px; /* 调整文本的右边距 */
+    padding-right: 10px; /* 或者使用内边距减少间隙 */
+}
+
+.about-pic {
+    width: 100%;
+    max-width: 400px; /* 根据需要调整图片的最大宽度 */
+    height: auto;
+    margin-left: 50px; /* 确保左边距为0 */
+    margin-right: 0px; /* 确保右边距为0，降低图片与文本之间的空隙 */
+}
+
+.about-image {
+    flex: 2;  /* 图片占据的空间比例，此比例比文本大，因此图片区域会更宽 */
+}
+
+.about-text p {
+    margin: 0; /* 移除段落的外边距以避免过大的间距 */
+}
+
+section#about ul {
+    margin-top: 10px; /* 维持列表顶部的外边距 */
+}
+
+
+h2 {
+    margin-top: 0;
+    padding-left: 0; /* 确保标题没有左侧内边距 */
+}
+
+p {
+    margin: 0; /* 移除段落的外边距 */
+    padding: 0; /* 移除段落的内边距 */
+}
+#unimelb {
+    color: blue; /* 设置链接颜色为蓝色 */
+    text-decoration: none; /* 去除下划线 */
+}
+
+#unimelb:hover {
+    color: red; /* 鼠标悬停时颜色变红 */
+    text-decoration: underline; /* 鼠标悬停时添加下划线 */
+}
+ul {
+    list-style-type: disc; /* 默认是圆形黑色点 */
+    margin-left: 20px; /* 调整列表的左边距 */
+    padding-left: 0; /* 取消默认的内边距 */
+}
+
+li {
+    color: black; /* 设置文本颜色 */
+    font-size: 16px; /* 设置字体大小 */
+}
+body {
+    font-family: 'Times New Roman', Times, serif; /* 添加备用字体以增加兼容性 */
+}
+#publications {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.publication {
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.publication-info h3 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.publication-info p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 16px;
+}
+
+.pdf-button {
+    display: inline-block;
+    background-color: #D8BFD8; /* Green background */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.pdf-button:hover {
+    background-color: #D8BFD8; /* Darker green */
+}
+
+
+.timeline-content img {
+    width: 50%; /* 设置图片宽度为容器的50% */
+    height: auto; /* 高度自动调整以保持图片纵横比 */
+}
+
+.timeline {
+    position: relative;
+    padding-left: 50px;
+    margin: 20px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #ddd;
+    top: 0;
+    bottom: 0;
+    left: 20px; /* Line left offset */
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start; /* 确保所有元素在顶部对齐 */
+    margin-bottom: 20px;
+}
+
+.timeline-icon {
+    flex-shrink: 0; /* 防止图标大小改变 */
+    width: 40px;
+    height: 40px;
+    margin-right: 20px; /* 添加右边距以与内容分开 */
+}
+
+
+
+.timeline-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    flex-grow: 1; /* 允许内容区域填充剩余空间 */
+}
+
+.timeline-content h2 {
+    font-size: 18px;
+}
+
+.timeline-content p {
+    font-size: 16px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* 在容器中平均分布卡片 */
+    padding: 20px 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 30%; /* 卡片宽度，根据需要调整 */
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 14px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* 允许多行显示 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中，如果卡片大小不一，这会对齐它们的中心 */
+    gap: 20px; /* 卡片之间的间隙 */
+    padding: 20px; /* 容器内边距，增加一些空间 */
+}
